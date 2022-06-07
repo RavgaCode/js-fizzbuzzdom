@@ -1,0 +1,46 @@
+:root {
+  --square-size: 100px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #083b4c;
+  text-align: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  color: white;
+}
+#numbers-grid {
+  display: flex;
+  width: calc((var(--square-size) + 0.2rem) * 7);
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.number-square {
+  height: var(--square-size);
+  width: var(--square-size);
+  margin-bottom: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1389b2;
+}
+.fizz {
+  background-color: #0bd6a1;
+}
+.buzz {
+  background-color: #ffd166;
+}
+.fizz-buzz {
+  background-color: #f0466f;
+}
