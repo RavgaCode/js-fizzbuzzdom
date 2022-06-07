@@ -17,7 +17,7 @@ for (let i = 1; i <= 100; i++) {
   }
   //   Aggiungo il testo al div square
   const numberSquare = square;
-  numberSquare.innerHTML += `${numberText}`;
+  numberSquare.innerHTML = `${numberText}`;
   // Stampo in pagina aggiungendo il div square alla grid
   const numbersGrid = document.getElementById("numbers-grid");
   numbersGrid.appendChild(numberSquare);
